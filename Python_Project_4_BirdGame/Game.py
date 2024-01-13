@@ -13,9 +13,9 @@ SCREEN = pygame.display.set_mode((SCREENWIDTH, SCREENHEIGHT))
 GROUNDY = SCREENHEIGHT * 0.8
 GAME_SPIRITES = {}
 GAME_SOUNDS = {}
-PLAYER = 'Python_Project/Python_Project_4_BirdGame/gallery/sprites/bird.png'
-BACKGROUND = 'Python_Project/Python_Project_4_BirdGame/gallery/sprites/Forest.png'
-PIPE = 'Python_Project/Python_Project_4_BirdGame/gallery/sprites//pipe.png'
+PLAYER = 'gallery/sprites/bird.png'
+BACKGROUND = 'gallery/sprites/Forest.png'
+PIPE = 'gallery/sprites//pipe.png'
 
 
 def welcomeScreen():
@@ -178,21 +178,21 @@ if __name__ == '__main__':
     # Sprites
 
     GAME_SPIRITES['numbers'] = (
-        pygame.image.load('Python_Project/Python_Project_4_BirdGame/gallery/sprites/0.png').convert_alpha(),  # convert_alpha() used for set image in screen
-        pygame.image.load('Python_Project/Python_Project_4_BirdGame/gallery/sprites/1.png').convert_alpha(),
-        pygame.image.load('Python_Project/Python_Project_4_BirdGame/gallery/sprites/2.png').convert_alpha(),
-        pygame.image.load('Python_Project/Python_Project_4_BirdGame/gallery/sprites/3.png').convert_alpha(),
-        pygame.image.load('Python_Project/Python_Project_4_BirdGame/gallery/sprites/4.png').convert_alpha(),
-        pygame.image.load('Python_Project/Python_Project_4_BirdGame/gallery/sprites/5.png').convert_alpha(),
-        pygame.image.load('Python_Project/Python_Project_4_BirdGame/gallery/sprites/6.png').convert_alpha(),
-        pygame.image.load('Python_Project/Python_Project_4_BirdGame/gallery/sprites/7.png').convert_alpha(),
-        pygame.image.load('Python_Project/Python_Project_4_BirdGame/gallery/sprites/8.png').convert_alpha(),
-        pygame.image.load('Python_Project/Python_Project_4_BirdGame/gallery/sprites/9.png').convert_alpha()
+        pygame.image.load('gallery/sprites/0.png').convert_alpha(),  # convert_alpha() used for set image in screen
+        pygame.image.load('gallery/sprites/1.png').convert_alpha(),
+        pygame.image.load('gallery/sprites/2.png').convert_alpha(),
+        pygame.image.load('gallery/sprites/3.png').convert_alpha(),
+        pygame.image.load('gallery/sprites/4.png').convert_alpha(),
+        pygame.image.load('gallery/sprites/5.png').convert_alpha(),
+        pygame.image.load('gallery/sprites/6.png').convert_alpha(),
+        pygame.image.load('gallery/sprites/7.png').convert_alpha(),
+        pygame.image.load('gallery/sprites/8.png').convert_alpha(),
+        pygame.image.load('gallery/sprites/9.png').convert_alpha()
     )
 
-    GAME_SPIRITES['message'] = pygame.image.load('Python_Project/Python_Project_4_BirdGame/gallery/sprites/message.png').convert_alpha()
+    GAME_SPIRITES['message'] = pygame.image.load('gallery/sprites/message.png').convert_alpha()
 
-    GAME_SPIRITES['base'] = pygame.image.load('Python_Project/Python_Project_4_BirdGame/gallery/sprites/base.png').convert_alpha()
+    GAME_SPIRITES['base'] = pygame.image.load('gallery/sprites/base.png').convert_alpha()
 
     GAME_SPIRITES['pipe'] = (
         pygame.transform.rotate(pygame.image.load(PIPE).convert_alpha(), 180),  # Rotate image to 180 digree
@@ -204,11 +204,11 @@ if __name__ == '__main__':
     GAME_SPIRITES['player'] = pygame.image.load(PLAYER).convert_alpha()
 
     # Sounds
-    GAME_SOUNDS['die'] = pygame.mixer.Sound('Python_Project/Python_Project_4_BirdGame/gallery/audio/die.wav')
-    GAME_SOUNDS['hit'] = pygame.mixer.Sound('Python_Project/Python_Project_4_BirdGame/gallery/audio/hit.wav')
-    GAME_SOUNDS['point'] = pygame.mixer.Sound('Python_Project/Python_Project_4_BirdGame/gallery/audio/point.wav')
-    GAME_SOUNDS['swoosh'] = pygame.mixer.Sound('Python_Project/Python_Project_4_BirdGame/gallery/audio/swoosh.wav')
-    GAME_SOUNDS['wing'] = pygame.mixer.Sound('Python_Project/Python_Project_4_BirdGame/gallery/audio/wing.wav')
+    GAME_SOUNDS['die'] = pygame.mixer.Sound('gallery/audio/die.wav')
+    GAME_SOUNDS['hit'] = pygame.mixer.Sound('gallery/audio/hit.wav')
+    GAME_SOUNDS['point'] = pygame.mixer.Sound('gallery/audio/point.wav')
+    GAME_SOUNDS['swoosh'] = pygame.mixer.Sound('gallery/audio/swoosh.wav')
+    GAME_SOUNDS['wing'] = pygame.mixer.Sound('gallery/audio/wing.wav')
 
     while True:
         welcomeScreen()  # show welcome screen until any button press
